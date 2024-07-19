@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify.com</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Learnify<span id="logo-amit"> by amit</span></h1>
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="/login.html" target="_blank"><button class="button">Log in</button></a>
+            <a href="/signup.html" target="_blank"><button>Sign up</button></a>
+            <a href="#" class="cart-icon">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="/images/team.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="What you want to learn ?">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <h2>Learn New Skills Online</h2>
+            <p>Discover a variety of courses and start learning today.</p>
+            <button type="submit" class="join">Join Now</button>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <h1>Popular Courses</h1>
+        <div class="container">
+            <div class="course-card">
+                <img src="/images/web.webp" alt="Full Stack Developer">
+                <div class="content">
+                    <h3>Full Stack Developer</h3>
+                    <p>A full stack developer is proficient in both front-end and back-end development, enabling them to handle all aspects of a web application.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹499</span>
+                    <s>₹1199</s>
+                    <span class="discount">80% off</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="/images/c.webp" alt="C/C++ Language">
+                <div class="content">
+                    <h3>C/C++ Language</h3>
+                    <p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹799</span>
+                    <s>₹1899</s>
+                    <span class="discount">70% off</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="/images/cyber-security.webp" alt="Cyber Security">
+                <div class="content">
+                    <h3>Cyber Security</h3>
+                    <p>Cybersecurity involves protecting computer systems, networks, and data from digital attacks, ensuring confidentiality, integrity, and availability of information.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹1199</span>
+                    <s>₹2599</s>
+                    <span class="discount">68% off</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="/images/essential-photoshop.webp" alt="Photo Editing">
+                <div class="content">
+                    <h3>Photo Editing</h3>
+                    <p>Photo editing is the process of altering images to enhance their appearance, correct flaws, and achieve desired effects.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹1499</span>
+                    <s>₹3099</s>
+                    <span class="discount">75% off</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="/images/Software-Development-Process.webp" alt="Software Development">
+                <div class="content">
+                    <h3>Software Development</h3>
+                    <p>Software development involves the design, creation, and maintenance of software applications through coding and programming.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹4099</span>
+                    <s>₹6000</s>
+                    <span class="discount">86% off</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="/images/video-editing.webp" alt="Video Editing">
+                <div class="content">
+                    <h3>Video Editing</h3>
+                    <p>Video editing involves manipulating and rearranging video shots to create a new work.</p>
+                    <button class="buy-button">Add to cart</button>
+                    <span class="price">₹2099</span>
+                    <s>₹5099</s>
+                    <span class="discount">90% off</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2">
+        <section class="section2">
+            <h2>Accelerate growth — for you or your organization</h2>
+            <p>Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.</p>
+            <div class="plans">
+                <div class="plan personal">
+                    <h3>Personal Plan</h3>
+                    <p class="description">For you</p>
+                    <p class="price">Starting at ₹850 per month</p>
+                    <p class="billing">Billed monthly or annually. Cancel anytime.</p>
+                    <button class="start-button">Start subscription</button>
+                    <ul class="features">
+                        <li>Access to 11,000+ top courses</li>
+                        <li>Certification prep</li>
+                        <li>Goal-focused recommendations</li>
+                        <li>AI-powered coding exercises</li>
+                    </ul>
+                </div>
+                <div class="plan team">
+                    <h3>Team Plan</h3>
+                    <p class="description">For your team</p>
+                    <p class="price">₹1,167 a month per user</p>
+                    <p class="billing">Billed annually. Cancel anytime.</p>
+                    <button class="start-button">Start subscription</button>
+                    <ul class="features">
+                        <li>Access to 11,000+ top courses</li>
+                        <li>Certification prep</li>
+                        <li>Goal-focused recommendations</li>
+                        <li>AI-powered coding exercises</li>
+                        <li>Analytics and adoption reports</li>
+                    </ul>
+                </div>
+                <div class="plan enterprise">
+                    <h3>Enterprise Plan</h3>
+                    <p class="description">For your whole organization</p>
+                    <p class="price">Contact sales for pricing</p>
+                    <button class="start-button">Request a demo</button>
+                    <ul class="features">
+                        <li>Access to 25,000+ top courses</li>
+                        <li>Certification prep</li>
+                        <li>Goal-focused recommendations</li>
+                        <li>AI-powered coding exercises</li>
+                        <li>Advanced analytics and insights</li>
+                        <li>Dedicated customer success team</li>
+                        <li>International course collection featuring 15 languages</li>
+                        <li>Customizable content</li>
+                        <li>Hands-on tech training with add-on</li>
+                        <li>Strategic implementation services with add-on</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="companies">
+        <div class="trusted-by">
+            <h2>Trusted by over 15,000 companies and millions of learners around the world</h2>
+            <div class="company-logos">
+                <img src="/images/samsung.webp" alt="Samsung">
+                <img src="/images/cisco.webp" alt="Cisco">
+                <img src="/images/Vimeo-logo.webp" alt="Vimeo">
+                <img src="/images/pgnew.webp" alt="P&G">
+                <img src="/images/hp.webp" alt="HP Enterprise">
+                <img src="/images/citi.webp" alt="Citi">
+                <img src="/images/Ericsson-Logo.webp" alt="Ericsson">
+                <img src="/images/Hero-logo.webp" alt="hero-honda">
+                <img src="/images/flipkart.webp" alt="flipkart">
+                <img src="/images/facebook.webp" alt="facebook">
+                <img src="/images/x.webp" alt="twitter">
+                <img src="/images/google.webp" alt="google">
+                <img src="/images/microsoft.webp" alt="Microsoft">
+                <img src="/images/amazone.webp" alt="Amazon">
+                <img src="/images/ibm.webp" alt="IBM">
+            </div>
+        </div>
+    </section>
+    
+    <div class="lectures">
+        <div class="lecture"><h1>Lecture videos</h1></div>
+        <iframe src="https://www.youtube.com/embed/UrsmFxEIp5k?si=tsib2nK4LBUI1GMH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/13gLB6hDHR8?si=4lLdSeUfUuaXu61l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VaSjiJMrq24?si=nh1uTSTZ4DK5Y-d2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Rgvzt0D8bR4?si=rC8k6m-uFXVwQy4t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/PBOBing2HUs?si=VVau1OG4fq3tZLjS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/aZb0iu4uGwA?si=xJy0OJPD2tn_kAOp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <section class="contact-form">
+        <h2>Apply now</h2>
+        <p>Fill out this form, and we will contact you by the information frequently !</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="abcxxx@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number *</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp-no">Whatsapp Number</label>
+                <input type="url" id="whatsapp-no" name="whatsapp-no" placeholder="Your whatsapp number">
+            </div>
+            <div class="form-group">
+                <label for="cover-letter">Message us *</label>
+                <textarea id="cover-letter" name="cover-letter" placeholder="Example Text" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Items added to the cart.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Learnify. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
